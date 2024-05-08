@@ -1,38 +1,32 @@
-import * as React from 'react';
+import { useLocation } from 'react-router-dom';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { NavLink } from "react-router-dom";
+import { styled } from '@mui/system';
 
-import { NavLink} from "react-router-dom";
+const StyledTab = styled((props) => <Tab component={NavLink} {...props} />)({
+  '&.Mui-selected': {
+    color: 'primary',
+    fontWeight: 'bold',
+  },
+});
 
 export default function ColorTabs() {
-  const [value, setValue] = React.useState('one');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  
+  const location = useLocation();
 
   return (
     <Box sx={{ width: '100%' }}>
       <Tabs
-        value={value}
-        onChange={handleChange}
+        value={location.pathname}
         textColor="secondary"
         indicatorColor="secondary"
         aria-label="secondary tabs example"
       >
-        
-        <NavLink className="navbar-options__option" to="/"> <Tab value="one" label="Inicio" /> </NavLink>
-        <NavLink className="navbar-options__option" to="/LinkPage"> <Tab value="two" label="Comienza aquí" /></NavLink>
-        <NavLink className="navbar-options__option" to="/TechPage"><Tab value="three" label="Tecnologías" /></NavLink>
-      
+        <StyledTab value="/" label="Inicio" to="/" className="navbar-options__option" />
+        <StyledTab value="/LinkPage" label="Comienza aquí" to="/LinkPage" className="navbar-options__option" />
+        <StyledTab value="/TechPage" label="Proyectos" to="/TechPage" className="navbar-options__option" />
       </Tabs>
     </Box>
   );
 }
-
-
-
-

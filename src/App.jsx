@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<HomePage />} />
-          <Route path="linkPage" element={<LinkPage />} />
-          <Route path="techPage" element={<TechPage />} />
+          <Route path="LinkPage" element={<LinkPage />} />
+          <Route path="TechPage" element={<TechPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
