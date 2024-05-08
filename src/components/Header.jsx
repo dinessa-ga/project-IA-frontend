@@ -17,12 +17,15 @@ const Header = () => {
         <img src="" alt="Buddy Writer" />
       </Link> */}
       <nav className="navbar">
-        <ul className="navbar-options">
+        <ul className="navbar-options" color>
           <NavLink className="navbar-options__option" to="/">
             HomePage
           </NavLink>
-          <NavLink className="navbar-options__option" to="/MatchPage">
-            MatchPage
+          <NavLink className="navbar-options__option" to="/LinkPage">
+            Comienza aquí
+          </NavLink>
+          <NavLink className="navbar-options__option" to="/TechPage">
+            Proyectos
           </NavLink> 
         </ul>
       </nav>

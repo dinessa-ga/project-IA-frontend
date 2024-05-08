@@ -1,8 +1,10 @@
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
+import './index.css'
 import HomePage from './pages/HomePage';
-//import MatchPage from './pages/MatchPage';
+import TechPage from './pages/TechPage';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LinkPage from './pages/LinkPage';
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<HomePage />} />
-          {/* <Route path="documentation" element={<MatchPage />} /> */}
+          <Route path="linkPage" element={<LinkPage />} />
+          <Route path="techPage" element={<TechPage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
