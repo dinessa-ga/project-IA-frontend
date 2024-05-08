@@ -1,12 +1,4 @@
 
-a {
-  font-weight: 500;
-  text-decoration: inherit;
-}
-a:hover {
-  font-weight: 600;
-}
-
 body {
   margin: 0;
   /* display: flex;
@@ -21,10 +13,9 @@ h1 {
 
 
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border-color: #FF6F61;
 }
 
+/* .App :focus {
+  outline: none;
+} */

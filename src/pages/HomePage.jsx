@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="landing">
           <div className="landing__content">
             <h1>Hackaton IA</h1>
-            <Button onClick={() => navigate("/LinkPage")} type="button" color="secondary">
+            <Button onClick={() => navigate("/LinkPage")} type="button" variant="contained" color="secondary">
               Comienza Ahora
             </Button>
           </div>
