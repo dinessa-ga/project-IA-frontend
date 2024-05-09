@@ -16,7 +16,7 @@ export default function ColorTabs() {
   const location = useLocation();
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%' }} id="box__content">
       <Tabs
         value={location.pathname}
         textColor="secondary"

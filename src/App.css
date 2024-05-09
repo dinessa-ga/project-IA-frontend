@@ -1,7 +1,16 @@
-.navbar-options__option{
-    wordWrap: 'break-word';
+#landing__content {
+    margin: 15%;
+
 }
 
-.landing__content{
-    
+#box__content {
+    margin: 2% 0% 0% 2%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#link__content {
+    margin: 20% 0% 0% 2%;
 }

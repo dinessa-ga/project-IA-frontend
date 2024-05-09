@@ -10,7 +10,7 @@ const HomePage = () => {
       <Header />
       
       <div className="landing">
-        <div className="landing__content">
+        <div id="landing__content">
           <h1>Hackaton IA</h1>
           <Button
             onClick={() => navigate("/LinkPage")}
